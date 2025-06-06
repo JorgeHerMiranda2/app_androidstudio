@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/medicina_icono"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MediRecorda es una app de recordatorio de medicinas"
+            android:textAlignment="center"
+            android:textColor="@color/Colorwhite"
+            android:layout_margin="40dp"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+
+        <!-- Campo de usuario -->
+        <EditText
+            android:id="@+id/usernameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Usuario"
+            android:inputType="text"
+            android:backgroundTint="@color/Colorwhite"
+            android:textColor="@color/Colorwhite"
+            android:textColorHint="@color/Colorwhite"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Contenedor de contraseña + botón de ver -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:backgroundTint="@color/Colorwhite"
+                android:textColor="@color/Colorwhite"
+                android:textColorHint="@color/Colorwhite"/>
+
+            <ImageButton
+                android:id="@+id/showPasswordButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@android:drawable/ic_menu_view"
+                android:contentDescription="Mostrar/Ocultar contraseña"/>
+        </LinearLayout>
+
+        <!-- Botón para entrar -->
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Entrar"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/Colorwhite"
+            android:textColor="@color/colorPrimary"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
