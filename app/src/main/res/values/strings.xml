@@ -1,3 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">MediRecorda</string>
+    <string name="app_name">MediRecorda</string> <string name="app_logo_description">Logo de la aplicación MediRecorda</string>
+    <string name="app_description">MediRecorda es una app de recordatorio de medicinas</string>
+    <string name="hint_username">Usuario</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="show_hide_password_description">Mostrar u ocultar contraseña</string>
+    <string name="button_login_text">Entrar</string>
+
 </resources>
